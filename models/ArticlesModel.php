@@ -14,11 +14,11 @@ class ArticlesModel extends Model
         $stmt->bind_param("issss", $id, $name, $title, $date, $content);
 
         $id = 'id+1';
-        $name = $_SESSION['user_name'];
-        $title = $_POST['title'];
+        $name = htmlspecialchars($_SESSION['user_name']);
+        $title = htmlspecialchars($_POST['title']);
         $date = $_POST['date'];
         $date = date("Y-m-d");
-        $content = $_POST['content'];
+        $content = htmlspecialchars($_POST['content']);
 
         $stmt->execute();
 
@@ -76,8 +76,8 @@ class ArticlesModel extends Model
     public function update() {
 
         $id = intval($_GET['id']);
-        $title = $_POST['title'];
-        $content = $_POST['content'];
+        $title = htmlspecialchars($_POST['title']);
+        $content = htmlspecialchars($_POST['content']);
 
 
         $sql = "UPDATE articles SET title='$title', content='$content' WHERE id=$id";
@@ -104,55 +104,3 @@ class ArticlesModel extends Model
     }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
