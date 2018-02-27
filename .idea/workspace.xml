@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f8bb85cf-4d91-4465-ba49-2cd370570e70" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/SzybkiZapis.v2.iml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/Wojci.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/php.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/models/ArticlesModel.php" afterPath="$PROJECT_DIR$/models/ArticlesModel.php" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -48,8 +43,8 @@
       <file leaf-file-name="ArticlesView.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/ArticlesView.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="27" column="18" lean-forward="false" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
+            <state relative-caret-position="453">
+              <caret line="32" column="14" lean-forward="true" selection-start-line="32" selection-start-column="14" selection-end-line="32" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -294,12 +289,20 @@
       <workItem from="1519583313534" duration="4342000" />
       <workItem from="1519666708797" duration="2657000" />
       <workItem from="1519730943804" duration="822000" />
-      <workItem from="1519732704171" duration="1082000" />
+      <workItem from="1519732704171" duration="1347000" />
     </task>
+    <task id="LOCAL-00001" summary="Protect against Xss and Sql injection in ArticlesModel.">
+      <created>1519737637685</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1519737637685</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="172730000" />
+    <option name="totallyTimeSpent" value="172995000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -340,6 +343,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Protect against Xss and Sql injection in ArticlesModel." />
+    <option name="LAST_COMMIT_MESSAGE" value="Protect against Xss and Sql injection in ArticlesModel." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -661,8 +668,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/ArticlesView.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="27" column="18" lean-forward="false" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
+        <state relative-caret-position="453">
+          <caret line="32" column="14" lean-forward="true" selection-start-line="32" selection-start-column="14" selection-end-line="32" selection-end-column="14" />
           <folding />
         </state>
       </provider>
