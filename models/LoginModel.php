@@ -7,7 +7,7 @@ class LoginModel extends Model
 
     public function insert() {
 
-        $user = $_POST['user'];
+        $user = htmlspecialchars($_POST['user']);
 
         $sql ="SELECT * FROM users WHERE user='$user'";
 
@@ -35,8 +35,8 @@ class LoginModel extends Model
             $stmt->bind_param("iss", $id, $user, $password);
 
             $id = 'id+1';
-            $user = $_POST['user'];
-            $password = hash('sha256', $_POST['password']);
+            $user = htmlspecialchars($_POST['user']);
+            $password = htmlspecialchars(hash('sha256', $_POST['password']));
 
             if (preg_match("/^(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,}$/",
                 $_POST['password'])) {
@@ -59,7 +59,7 @@ class LoginModel extends Model
 
     public function checkUser() {
 
-        $user = $_POST['user_name'];
+        $user = htmlspecialchars($_POST['user_name']);
         $hash =  hash('sha256', $_POST['user_password']);
         $password = substr($hash, 0, -14);
 
